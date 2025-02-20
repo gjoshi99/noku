@@ -55,6 +55,7 @@ const nineth = document.querySelector('.nineth');
 const tenth = document.querySelector('.tenth');
 const eleventh = document.querySelector('.eleventh');
 
+let total;
 
 document.querySelector('button').addEventListener('click', () => {
         if(first.value === "" || Regnummer.value === "" || textInputone.value === "" || middleone === "" || kortchecked !== true && swishChecked !== true) {
@@ -182,7 +183,7 @@ doc.setFont("helvetica","bold");
 doc.line(128,225, 203,225)
 doc.text('ATT BETALA', 160,leftDown)
 doc.setFontSize(10);
-let total = Number(first.value) + Number(second.value) + Number(third.value) + Number(fourth.value) + Number(fifth.value) + Number(sixth.value) + Number(seventh.value) + Number(eightth.value) + Number(tenth.value) + Number(eleventh.value)
+total = Number(first.value) + Number(second.value) + Number(third.value) + Number(fourth.value) + Number(fifth.value) + Number(sixth.value) + Number(seventh.value) + Number(eightth.value) + Number(tenth.value) + Number(eleventh.value)
 
 let momsResult = (25/100)*total
 let totalMedMoms = total+momsResult
@@ -263,3 +264,11 @@ const pdfUrl = doc.output("bloburl");
  doc.save(`${Regnummer.value.toUpperCase()} service.pdf`)
 }
 })
+
+
+})
+const totalHtml = document.querySelector('.total');
+setInterval(() => {
+    total = Number(first.value) + Number(second.value) + Number(third.value) + Number(fourth.value) + Number(fifth.value) + Number(sixth.value) + Number(seventh.value) + Number(eightth.value) + Number(tenth.value) + Number(eleventh.value);
+    totalHtml.textContent = `Total: ${total}`
+}, 9000);
