@@ -268,5 +268,8 @@ const pdfUrl = doc.output("bloburl");
 const totalHtml = document.querySelector('.total');
 setInterval(() => {
     total = Number(first.value) + Number(second.value) + Number(third.value) + Number(fourth.value) + Number(fifth.value) + Number(sixth.value) + Number(seventh.value) + Number(eightth.value) + Number(tenth.value) + Number(eleventh.value);
-    totalHtml.textContent = `Total: ${total}`
+    let momsResult = (25/100)*total
+    let totalMedMoms = total+momsResult
+    totalHtml.textContent = `Total: ${totalMedMoms}`
 }, 9000);
+
