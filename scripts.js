@@ -188,7 +188,7 @@ total = Number(first.value) + Number(second.value) + Number(third.value) + Numbe
 let momsResult = (25/100)*total
 let totalMedMoms = total+momsResult
 
-doc.text(`${totalMedMoms}kr`, rightsite,leftDown)
+doc.text(`${Math.round(totalMedMoms)} kr`, 185,leftDown)
 
 
 
@@ -262,6 +262,8 @@ const pdfUrl = doc.output("bloburl");
 
  window.open(pdfUrl)
  doc.save(`${Regnummer.value.toUpperCase()} service.pdf`)
+
+ window.location.reload()
 }
 })
 
@@ -270,6 +272,6 @@ setInterval(() => {
     total = Number(first.value) + Number(second.value) + Number(third.value) + Number(fourth.value) + Number(fifth.value) + Number(sixth.value) + Number(seventh.value) + Number(eightth.value) + Number(tenth.value) + Number(eleventh.value);
     let momsResult = (25/100)*total
     let totalMedMoms = total+momsResult
-    totalHtml.textContent = `Total: ${totalMedMoms}`
+    totalHtml.textContent = `Total: ${Math.round(totalMedMoms)} kr`
 }, 9000);
 
