@@ -20,6 +20,7 @@ img {
 
 .bordered{
 display: flex;
+position: relative; 
 flex-direction: row;
 justify-content: space-between;
 width: 100%;
@@ -90,5 +91,5 @@ input{
 .total{
     position: absolute;
     left: 2%;
-    bottom: 10%;
+    bottom: 5px;
 }
