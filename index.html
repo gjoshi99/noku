@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="logo.ico">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="button.css">
+</head>
+<body>
+    <img src="logo.png" alt="logo">
+    <span class="REGNR">
+    <label for="REGNR">REGNR:</label>
+    <input minlength="6" maxlength="6" name="REGNR" class="registreringsnummer" >
+    </span>
+
+
+    <div class="bordered">
+    <div class="right">
+        <input type="text" class="textInputone">
+        <input type="text" class="textInputtwo">
+        <input type="text" class="textInputthre">
+        <input type="text" class="textInputfour">
+        <input type="text" class="textInputfive">
+        <input type="text" class="textInputsix">
+        <input type="text" class="textInputseven">
+        <input type="text" class="textInputeight">
+        <input type="text" class="textInputnine">
+        <input type="text" class="textInputten">
+        <input type="text" class="textInputeleven">
+
+    </div>
+    <div class="middle">
+        <input type="text" class="middleone">
+        <input type="text" class="middletwo">
+        <input type="text" class="middlethre">
+        <input type="text" class="middlefour">
+        <input type="text" class="middlefive">
+        <input type="text" class="middlesix">
+        <input type="text" class="middleseven">
+        <input type="text" class="middleeight">
+        <input type="text" class="middlesnine">
+        <input type="text" class="middleten">
+        <input type="text" class="middleeleven">
+    </div>
+
+    
+    <div class="left">
+        <input type="number" class="first">
+        <input type="number" class="second"> 
+        <input type="number" class="third">    
+        <input type="number" class="fourth">    
+        <input type="number" class="fifth">    
+        <input type="number" class="sixth">    
+        <input type="number" class="seventh">    
+        <input type="number" class="eightth">    
+        <input type="number" class="nineth">    
+        <input type="number" class="tenth">    
+        <input type="number" class="eleventh">    
+   
+    </div>
+        <p class="total">Totali</p>
+    </div>  
+    <button>Krijo PDF</button>
+    <span id="radioBox">
+        <span class="kort">
+            <label for="radioOne">Kort</label>
+            <input type="radio" id="radioKort" name="radioOne">
+        </span>
+            <span class="Swish">
+    <label for="radioOne">Swish</label>
+    <input type="radio" id="radioSwish" name="radioOne">
+            </span> 
+    </span>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="scripts.js" defer></script>
+<script src="radio.js" defer></script>
+</html>

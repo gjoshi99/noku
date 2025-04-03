@@ -1,0 +1,95 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: lightblue;
+    align-items: center;  
+}
+img {
+    width: 200px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+.REGNR{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: 20px;
+    top: 40px;
+}
+
+.bordered{
+display: flex;
+position: relative; 
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+height: 80Vh;
+border: 2px solid black;
+}
+
+
+.right{
+display: flex;
+flex-direction: column;
+height: 100%;
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.left{
+display: flex;
+flex-direction: column;
+height: 100%;
+
+}
+input{
+    width: 200px;
+    margin: 5px;
+    border-color: transparent;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 2px 3px 5px black;
+}
+
+.left input{
+    text-align: left;
+    width: 50px;
+}
+
+.registreringsnummer{
+    width: 100px;
+    text-transform: uppercase;
+}
+#radioBox{
+    position: absolute;  
+    border-color: transparent;
+    display: flex;
+    gap: 20px;
+    width: fit-content;
+    right: 60px;
+    bottom: 60px;
+}
+#radioBox input{
+    width: fit-content;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+}
+.kort{
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.Swish{
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.total{
+    position: absolute;
+    left: 2%;
+    bottom: 5px;
+}
