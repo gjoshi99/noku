@@ -71,8 +71,8 @@ input{
     display: flex;
     gap: 20px;
     width: fit-content;
-    right: 60px;
-    bottom: 60px;
+    right: 30px;
+    bottom: 30px;
 }
 #radioBox input{
     width: fit-content;
@@ -92,4 +92,13 @@ input{
     position: absolute;
     left: 2%;
     bottom: 5px;
+}
+.chooseDate{
+    position: absolute;
+    top: 3%;
+    right:3%;
+    background-color: white;
+    text-align: center;
+    width: fit-content;
+    border: none;
 }
