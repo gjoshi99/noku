@@ -73,11 +73,21 @@ image.src = "logo.png";
 // month = month + 1;
 let Datum = moment().format("YYYY-MM-DD");
 
+const chooseDate = document.querySelector('.chooseDate');
+
+setTimeout(() => {
+
+}, 5000);
 
 doc.addImage(image,'png', 50,7, 120,50);
 doc.setFontSize(17)
 doc.setFont("helvetica","normal");
 doc.text("Reg:", 10,70)
+if(chooseDate.value.length <= 1){
+    console.log("same date has been choosed")
+}else{
+    Datum = chooseDate.value
+}
 doc.text(`${Regnummer.value.toUpperCase()}`, 25,70)
 doc.text(`Datum: ${Datum}`, 10,80)
 doc.rect(5,85, 200,158)
@@ -274,4 +284,7 @@ setInterval(() => {
     let totalMedMoms = total+momsResult
     totalHtml.textContent = `Total: ${Math.round(totalMedMoms)} kr`
 }, 9000);
+
+
+
 
