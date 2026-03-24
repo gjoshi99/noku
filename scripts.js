@@ -58,7 +58,7 @@ const eleventh = document.querySelector('.eleventh');
 let total;
 
 document.querySelector('button').addEventListener('click', () => {
-        if(first.value === "" || Regnummer.value === "" || textInputone.value === "" || middleone === "" || kortchecked !== true) {
+        if(first.value === "" || Regnummer.value === "" || textInputone.value === "" || middleone === "") {
     alert('You have to put in some values or check the payment method');
 }else {
 
