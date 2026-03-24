@@ -223,20 +223,20 @@ doc.text('25%', 138,222)
 doc.setFont("helvetica","bold");
          
 // payment method
-doc.text('kort', 170,239);
-doc.rect(179,236, 5,5);
-doc.text('Swish', 185,239)
-doc.rect(198,236,5,5)
 if(kortchecked === true){
     doc.setLineWidth(0.5);
     doc.line(180,238, 181,240)
     doc.line(181,240,183,236)
+    doc.text('kort', 170,239);
+    doc.rect(179,236, 5,5);
 }
 // doc.setLineWidth(0.2);
 if(swishChecked === true){
     doc.setLineWidth(0.5);
     doc.line(199,238,200,240);
     doc.line(200,240,202,236)
+    doc.text('Swish', 185,239)
+    doc.rect(198,236,5,5)
 }
 
 
