@@ -271,7 +271,7 @@ doc.text('559428-8036', 165,265)
 const pdfUrl = doc.output("bloburl");
 
  window.open(pdfUrl)
- doc.save(`${Regnummer.value.toUpperCase()} service.pdf`)
+ doc.save(`${Regnummer.value.toUpperCase()} ${new Date().toLocaleString('sv-SE')} service.pdf`)
 
  window.location.reload()
 }
